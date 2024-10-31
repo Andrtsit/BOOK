@@ -1,0 +1,38 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <link rel="stylesheet" href="style.css"></link>
+    <script defer src="script.js"></script>
+    <title>BOOKS TO READ</title>
+  </head>
+  <body>
+    <div class="overlay hidden"></div>
+    <header>
+      <h1>BOOKS LIST</h1>
+
+      <button id="btn-show">Add a book</button>
+    </header>
+    <main>
+      <div class="modal">
+        <label><p class="description">Title:</p><input type="text" id="book-title" required /></label>
+        <label><p class="description">Author: </p> <input type="text" id="author" required /></label>
+        <label><p class="description">Pages:</p><input type="number" id="pages" required /></label>
+        <label><p class="description">Read:</p>
+          <select name="read-status" id="read">
+            <option value="Yes">Yes</option>
+            <option value="No">No</option>
+          </select>
+        </label>
+        <button id="btn-submit">ADD BOOK</button>
+        <button id="btn-close-modal">&times;</button>
+      </div>
+
+      <div class="book-container">
+        </div> 
+        </div>  
+    </main>
+    <footer><h3>© 2024</h3></footer>
+  </body>
+</html>
